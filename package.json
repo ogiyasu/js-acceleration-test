@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node ./server.js",
+    "dev:https": "HTTPS=true node ./server.js",
     "build": "next build",
     "static": "next build && next export",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
